@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golf Stats Interactive</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="title">
+                <i class="fas fa-golf-ball"></i>
+                Golf Stats Hub
+            </h1>
+            <p class="subtitle">Discover the world's top golfers and their incredible stats</p>
+        </header>
+
+        <div class="controls">
+            <button id="shuffleBtn" class="shuffle-btn">
+                <i class="fas fa-shuffle"></i>
+                Shuffle Players
+            </button>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search golfers..." class="search-input">
+                <i class="fas fa-search search-icon"></i>
+            </div>
+        </div>
+
+        <div class="golfers-grid" id="golfersGrid">
+            <!-- Golfers will be populated by JavaScript -->
+        </div>
+
+        <div class="modal" id="statsModal">
+            <div class="modal-content">
+                <span class="close-btn" id="closeBtn">&times;</span>
+                <div class="modal-body" id="modalBody">
+                    <!-- Stats will be populated by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="background-animation">
+        <div class="golf-ball ball-1"></div>
+        <div class="golf-ball ball-2"></div>
+        <div class="golf-ball ball-3"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
